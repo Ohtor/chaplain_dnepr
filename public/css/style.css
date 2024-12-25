@@ -56,7 +56,26 @@
          url(../fonts/FixelText-Bold.woff) format('woff'),
          url(../fonts/FixelText-Bold.woff2) format('woff2');
 }
-  
+@font-face {
+    font-family: 'AlumniSans-Medium';
+    src: url(../fonts/AlumniSans-Medium.eot);
+    src: url(../fonts/AlumniSans-Medium.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/AlumniSans-Medium.otf) format('otf'),
+         url(../fonts/AlumniSans-Medium.svg#AlumniSans-Medium) format('svg'),
+         url(../fonts/AlumniSans-Medium.ttf) format('truetype'),
+         url(../fonts/AlumniSans-Medium.woff) format('woff'),
+         url(../fonts/AlumniSans-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'AlumniSans-Bold';
+    src: url(../fonts/AlumniSans-Bold.eot);
+    src: url(../fonts/AlumniSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/AlumniSans-Bold.otf) format('otf'),
+         url(../fonts/AlumniSans-Bold.svg#AlumniSans-Bold) format('svg'),
+         url(../fonts/AlumniSans-Bold.ttf) format('truetype'),
+         url(../fonts/AlumniSans-Bold.woff) format('woff'),
+         url(../fonts/AlumniSans-Bold.woff2) format('woff2');
+}  
   
 
 *{
@@ -92,6 +111,7 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
 /*--------------------*/
 
 
@@ -113,9 +133,11 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
+    width: 1903px;
     /* display: flex; */
     /* justify-content: center; */
 }
+
 
 .content{
     width: 1600px;
@@ -146,7 +168,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     /* text-align: justify; */
     /* padding: 28px; */
     padding: 27px 0px;
-    color: bisque;
+    color: #D7D7D7;
     font-size: 53px;
 }
 .mainnameforheader{
@@ -157,7 +179,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     /* text-align: justify; */
     /* padding: 28px; */
     padding: 27px 0px;
-    color: bisque;
+    color: #D7D7D7;
     font-size: 53px;
 }
 
@@ -444,10 +466,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .assembly{
     /* border: 1px solid black; */
-    font-family: 'FixelDisplay';
-    font-weight: 700;
-    font-size: 55px;
+    font-family: 'AlumniSans-Medium';
+    
+    font-weight: 500;
+    font-size: 48px;
     height: 738px;
+    margin-bottom: 30px;
+    display: flex;    
+    span{   
+        font-family: 'AlumniSans-Bold';
+        font-weight: 700;
+    }
+}
+.assembly-link-color{
+    color: #2C2C2C;
 }
 /* .assembly .assembly1{
     color: #000000;
@@ -458,6 +490,78 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     top: 56px;
     left:  0px; 
 } */
+
+.assembly-left {    
+    width: 50%;
+}
+.assembly-left-one {
+    position: relative;
+    top: 7%;    
+    width: 40%;
+}
+.assembly-left-two {
+    position: relative;
+    top: 11%;
+    left: 23%;
+    width: 40%;
+}
+.assembly-left-three {
+    position: relative;
+    top: 15%;
+    left: 39%;
+    width: 40%;
+}
+.assembly-left-four {
+}
+.assembly-right {
+    text-align: right;
+    width: 50%;
+}
+.logo-missionswerk-main{
+    width: 26px;
+    margin-right: -6px;
+    margin-top: -5px;
+}
+.assembly-right-one {
+    position: relative;
+    justify-self: right;
+    top: 7%;  
+    
+    width: 40%;
+}
+.assembly-right-two {
+    position: relative;
+    justify-self: right;
+    top: 11%; 
+    right: 18%;
+    width: 40%;
+}
+.assembly-right-three {
+    position: relative;
+    justify-self: right;
+    top: 15%; 
+    right: 40%;
+    width: 40%;
+}
+.assembly-right-four {
+}
+.assembly-left-one:hover,
+.assembly-left-two:hover,
+.assembly-left-three:hover,
+.assembly-right-one:hover,
+.assembly-right-two:hover,
+.assembly-right-three:hover{
+    filter: drop-shadow(2px 2px 2px rgba(83,77,69, 0.6));
+}
+.assembly-left-one:active,
+.assembly-left-two:active,
+.assembly-left-three:active,
+.assembly-right-one:active,
+.assembly-right-two:active,
+.assembly-right-three:active{
+    filter: drop-shadow(3px 3px 3px rgba(83,77,69, 0.9));
+}
+
 .assembly .assembly1{
     color: #000000;
     position: relative;
@@ -558,7 +662,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .footer{
     font-family: 'FixelDisplay';
     font-size: 20px;
-    width: 1900px;
+    width: 1903px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -591,7 +695,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
-    width: 1900px;
+    width: 1903px;
     height: 325px;
 }
 .headercontent{
@@ -696,7 +800,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
-    width: 1900px;
+    width: 1903px;
     
     height: 223px;
     
@@ -727,6 +831,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .shield-content{
     min-height: 1000px;
     display: flex;
+    
     /* justify-content: center; */
     /* align-items: center; */
     
@@ -737,18 +842,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
-    width: 1900px;
+    width: 1903px;
 }
 .shield-content-text{
     margin-top: 52px;
     width: 480px;
-    font-family: 'FixelText-SemiBold';
-    font-weight: 600;
-    font-size: 26px;
+    font-family: 'FixelText-Regular';
+    font-weight: 400;
+    font-size: 20px;
     color: #000000;
     text-align: justify;
-    line-height: 36px;
-    
+    line-height: 28px;
+    padding-bottom: 50px;
+    span{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+    }
+    p{
+        text-indent: 20px;
+    }    
+    h2{
+        font-size: 26px;
+    }
+}
+pravrki{
+
 }
 .shield-content-text-left{
     margin-top: 52px;
@@ -775,7 +893,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
-    width: 1900px;
+    width: 1903px;
     height: 223px;
     display: flex;
     justify-content: left;
@@ -787,7 +905,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
-    width: 1900px;
+    width: 1903px;
     min-height: 1000px;
 }
 
@@ -816,11 +934,16 @@ font-family: 'FixelText-Regular';
     h2{
         font-family: 'FixelText-Bold';
         font-weight: 700;
-        font-size: 40px;
+        font-size: 48px;
     }
-    span{
+    h3{
         font-family: 'FixelText-SemiBold';
         font-weight: 600;
+        font-size: 32px;
+    }
+    span{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
     }
 }
 
@@ -842,7 +965,16 @@ font-family: 'FixelText-Regular';
         font-weight: 600;
     }
 }
-
+.article-header{
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    span{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+        font-size: 40px;
+    }
+}
 /* Здесь падинг вместо желаемого марджина - марджин тянет фон вниз */
 .article-text-container{
     padding-top: 40px;
@@ -860,3 +992,4 @@ font-family: 'FixelText-Regular';
     width: 460px;
     margin: 0px 50px;
 }
+

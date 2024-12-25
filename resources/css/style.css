@@ -26,6 +26,58 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'FixelText-SemiBold';
+    src: url(../fonts/FixelText-SemiBold.eot);
+    src: url(../fonts/FixelText-SemiBold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/FixelText-SemiBold.otf) format('otf'),
+         url(../fonts/FixelText-SemiBold.svg#FixelText-SemiBold) format('svg'),
+         url(../fonts/FixelText-SemiBold.ttf) format('truetype'),
+         url(../fonts/FixelText-SemiBold.woff) format('woff'),
+         url(../fonts/FixelText-SemiBold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'FixelText-Regular';
+    src: url(../fonts/FixelText-Regular.eot);
+    src: url(../fonts/FixelText-Regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/FixelText-Regular.otf) format('otf'),
+         url(../fonts/FixelText-Regular.svg#FixelText-Regular) format('svg'),
+         url(../fonts/FixelText-Regular.ttf) format('truetype'),
+         url(../fonts/FixelText-Regular.woff) format('woff'),
+         url(../fonts/FixelText-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'FixelText-Bold';
+    src: url(../fonts/FixelText-Bold.eot);
+    src: url(../fonts/FixelText-Bold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/FixelText-Bold.otf) format('otf'),
+         url(../fonts/FixelText-Bold.svg#FixelText-Bold) format('svg'),
+         url(../fonts/FixelText-Bold.ttf) format('truetype'),
+         url(../fonts/FixelText-Bold.woff) format('woff'),
+         url(../fonts/FixelText-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'AlumniSans-Medium';
+    src: url(../fonts/AlumniSans-Medium.eot);
+    src: url(../fonts/AlumniSans-Medium.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/AlumniSans-Medium.otf) format('otf'),
+         url(../fonts/AlumniSans-Medium.svg#AlumniSans-Medium) format('svg'),
+         url(../fonts/AlumniSans-Medium.ttf) format('truetype'),
+         url(../fonts/AlumniSans-Medium.woff) format('woff'),
+         url(../fonts/AlumniSans-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'AlumniSans-Bold';
+    src: url(../fonts/AlumniSans-Bold.eot);
+    src: url(../fonts/AlumniSans-Bold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/AlumniSans-Bold.otf) format('otf'),
+         url(../fonts/AlumniSans-Bold.svg#AlumniSans-Bold) format('svg'),
+         url(../fonts/AlumniSans-Bold.ttf) format('truetype'),
+         url(../fonts/AlumniSans-Bold.woff) format('woff'),
+         url(../fonts/AlumniSans-Bold.woff2) format('woff2');
+}  
+  
+
 *{
 	padding: 0;
 	margin: 0;
@@ -59,9 +111,24 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
 /*--------------------*/
 
-body{
+
+.shb-red{
+    border: 1px solid rgb(221, 65, 65);
+}
+.shb-black{
+    border: 1px solid rgb(0, 0, 0);
+}
+.shb-blue{
+    border: 1px solid rgb(0, 162, 255);
+}
+.shb-green{
+    border: 1px solid rgb(20, 247, 77);
+}
+
+.mainbody{
     background-image: url(../img/mainback.png);
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -70,10 +137,12 @@ body{
     /* justify-content: center; */
 }
 
-.main{
+
+.content{
     width: 1600px;
     margin-left: 161px;
-    
+}
+.main{       
     height: 1430px;
     /* max-height: 1735px; */
     /* min-width: 1600px;
@@ -86,11 +155,11 @@ body{
     /* border: 5px solid red; */
     
     /* background-image: url(../img/mainback.png);
-    background-repeat: no-repeat; */
-    
+    background-repeat: no-repeat; */    
 }
 
-.main .mainname{
+
+.mainname{
     /* border: 1px solid black; */
     font-family: 'AlegreyaSC';
     height: 105px;
@@ -98,7 +167,18 @@ body{
     /* text-align: justify; */
     /* padding: 28px; */
     padding: 27px 0px;
-    color: bisque;
+    color: #D7D7D7;
+    font-size: 53px;
+}
+.mainnameforheader{
+    /* border: 1px solid black; */
+    font-family: 'AlegreyaSC';
+    height: 112px;
+    text-align: center;
+    /* text-align: justify; */
+    /* padding: 28px; */
+    padding: 27px 0px;
+    color: #D7D7D7;
     font-size: 53px;
 }
 
@@ -385,11 +465,102 @@ body{
 }
 .assembly{
     /* border: 1px solid black; */
-    font-family: 'FixelDisplay';
-    font-weight: 700;
-    font-size: 55px;
+    font-family: 'AlumniSans-Medium';
+    
+    font-weight: 500;
+    font-size: 48px;
     height: 738px;
+    margin-bottom: 30px;
+    display: flex;    
+    span{   
+        font-family: 'AlumniSans-Bold';
+        font-weight: 700;
+    }
 }
+.assembly-link-color{
+    color: #2C2C2C;
+}
+/* .assembly .assembly1{
+    color: #000000;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: 56px;
+    left:  0px; 
+} */
+
+.assembly-left {    
+    width: 50%;
+}
+.assembly-left-one {
+    position: relative;
+    top: 7%;    
+    width: 40%;
+}
+.assembly-left-two {
+    position: relative;
+    top: 11%;
+    left: 23%;
+    width: 40%;
+}
+.assembly-left-three {
+    position: relative;
+    top: 15%;
+    left: 39%;
+    width: 40%;
+}
+.assembly-left-four {
+}
+.assembly-right {
+    text-align: right;
+    width: 50%;
+}
+.logo-missionswerk-main{
+    width: 26px;
+    margin-right: -6px;
+    margin-top: -5px;
+}
+.assembly-right-one {
+    position: relative;
+    justify-self: right;
+    top: 7%;  
+    
+    width: 40%;
+}
+.assembly-right-two {
+    position: relative;
+    justify-self: right;
+    top: 11%; 
+    right: 18%;
+    width: 40%;
+}
+.assembly-right-three {
+    position: relative;
+    justify-self: right;
+    top: 15%; 
+    right: 40%;
+    width: 40%;
+}
+.assembly-right-four {
+}
+.assembly-left-one:hover,
+.assembly-left-two:hover,
+.assembly-left-three:hover,
+.assembly-right-one:hover,
+.assembly-right-two:hover,
+.assembly-right-three:hover{
+    filter: drop-shadow(2px 2px 2px rgba(83,77,69, 0.6));
+}
+.assembly-left-one:active,
+.assembly-left-two:active,
+.assembly-left-three:active,
+.assembly-right-one:active,
+.assembly-right-two:active,
+.assembly-right-three:active{
+    filter: drop-shadow(3px 3px 3px rgba(83,77,69, 0.9));
+}
+
 .assembly .assembly1{
     color: #000000;
     position: relative;
@@ -490,7 +661,7 @@ body{
 .footer{
     font-family: 'FixelDisplay';
     font-size: 20px;
-    width: 1900px;
+    width: 1920px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,4 +694,301 @@ body{
     background-repeat: no-repeat;
     background-position: 0% 0%;
     background-attachment: local;
+    width: 1900px;
+    height: 325px;
 }
+.headercontent{
+    /* border: 1px solid black; */
+    height: 214px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shieldsleft{
+    /* border: 1px solid black; */
+    height: 212px;
+    width: 592px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.shieldcontainerleft{
+    /* border: 1px solid #39e639; */
+    text-align: center;
+    height: 212px;
+    width: 99px;
+    margin-right: 47px;
+}
+.shieldcontainerright{
+    /* border: 1px solid #39e639; */
+    text-align: center;
+    height: 212px;
+    width: 99px;
+    margin-left: 47px;
+}
+.shieldcenter{
+    /* border: 1px solid black; */
+    height: 212px;
+    width: 414px;
+}
+.shieldsright{
+    /* border: 1px solid black; */
+    height: 212px;
+    width: 592px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.shieldname{
+    font-family: 'FixelText-SemiBold';
+    color: #121212;
+    display: inline-block;
+    justify-self: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+.shieldname:hover{
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0, 0.9));
+    /* text-decoration: underline; */
+}
+.shieldname:active{
+    color: black;
+    filter: drop-shadow(5px 5px 7px rgba(0,0,0, 1));
+    /* text-decoration: underline; */
+}
+.shieldicon{
+    display: inline-block;
+    width: 99px;
+    padding: 12px 0px;
+    filter: drop-shadow(5px 5px 7px rgba(0,0,0, 0.4));
+}
+.shieldicon:hover{
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.6));
+}
+.shieldicon:active{
+    filter: drop-shadow(7px 7px 7px rgba(0,0,0, 0.9));
+}
+.headermainshield{
+    justify-self: center;
+    display: block;
+    width: 114px;
+    padding-top: 16px;
+}
+.headermainshield:hover{
+    filter: drop-shadow(5px 5px 5px #fceb02);
+}
+.headermainshield:active{
+    filter: drop-shadow(7px 7px 7px #fceb02);
+}
+.rehabilitationbutton{
+    display: block;
+    width: 279px;
+    justify-self: center;
+    padding-top: 11px;
+}
+.rehabilitationbutton:hover{
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0, 0.6));
+}
+.rehabilitationbutton:active{
+    filter: drop-shadow(7px 7px 7px rgba(0,0,0, 0.9));
+}
+
+.shield-description-container-back{
+    background-image: url(../img/descriptionback.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: local;
+    width: 1900px;
+    
+    height: 223px;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.shield-description-container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 223px;
+}
+.shield-description{
+    font-family: 'FixelText-Regular';
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    margin-left: 62px;
+    text-align: justify;
+    line-height: 36px;
+    span{
+        font-family: 'FixelText-SemiBold';
+        font-weight: 600;
+    }
+}
+
+.shield-content{
+    min-height: 1000px;
+    display: flex;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+
+}
+.shield-content-container-back{
+    background-image: url(../img/shieldcontentback.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: local;
+    width: 1900px;
+}
+.shield-content-text{
+    margin-top: 52px;
+    width: 480px;
+    font-family: 'FixelText-Regular';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    text-align: justify;
+    line-height: 28px;
+    padding-bottom: 50px;
+    span{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+    }
+    p{
+        text-indent: 20px;
+    }    
+    h2{
+        font-size: 26px;
+    }
+}
+pravrki{
+
+}
+.shield-content-text-left{
+    margin-top: 52px;
+    width: 480px;
+    margin-bottom: 60px;
+    /* justify-self: left; */
+}
+.shield-content-img-container{
+    margin: 52px 58px 0px;
+    width: 521px;
+    /* justify-self: center; */
+}
+.shield-content-text-right{
+    margin-top: 52px;
+    width: 480px;
+    /* justify-self: right; */
+}
+.shield-content-img{
+    margin-bottom: 46px;
+}
+
+.assembly-description-container-back{
+    background-image: url(../img/descriptionback.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: local;
+    width: 1900px;
+    height: 223px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.assembly-content-container-back{
+    background-image: url(../img/articlecontentback.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-attachment: local;
+    width: 1900px;
+    min-height: 1000px;
+}
+
+/* .article-description-text{
+font-family: 'FixelText-Regular';
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    
+    text-align: justify;
+    line-height: 36px;
+    span{
+        font-family: 'FixelText-SemiBold';
+        font-weight: 600;
+    }
+} */
+
+.article-fixel-text{
+    font-family: 'FixelText-Regular';
+    font-weight: 400;
+    font-size: 26px;
+    color: #000000;
+    /* padding-left: 62px; */
+    text-align: justify;
+    line-height: 36px;
+    h2{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+        font-size: 48px;
+    }
+    h3{
+        font-family: 'FixelText-SemiBold';
+        font-weight: 600;
+        font-size: 32px;
+    }
+    span{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+    }
+}
+
+.article-fixel-text-white{
+    font-family: 'FixelText-Regular';
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    /* padding-left: 62px; */
+    text-align: justify;
+    line-height: 36px;
+    h2{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+        font-size: 40px;
+    }
+    span{
+        font-family: 'FixelText-SemiBold';
+        font-weight: 600;
+    }
+}
+.article-header{
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    span{
+        font-family: 'FixelText-Bold';
+        font-weight: 700;
+        font-size: 40px;
+    }
+}
+/* Здесь падинг вместо желаемого марджина - марджин тянет фон вниз */
+.article-text-container{
+    padding-top: 40px;
+}
+
+.article-img-container{
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 337px;
+    padding-bottom: 150px;
+}
+.article-content-img{
+    width: 460px;
+    margin: 0px 50px;
+}
+

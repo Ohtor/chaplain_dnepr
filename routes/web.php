@@ -50,6 +50,10 @@ Route::get('/mainarticle/school', function () {
     return view('mainarticle.school.index');
 })->name('mainarticle.school.index');
 
+Route::get('/mainarticle/missionswerk', function () {
+    return view('mainarticle.missionswerk.index');
+})->name('mainarticle.missionswerk.index');
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });

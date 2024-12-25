@@ -78,30 +78,35 @@
                 <img class="cross" src="../img/cross.png" alt="">
             </div>
             <div class="assembly ">
-                <a href="{{ route('mainarticle.assembly.index') }}" class="assembly1 ">
-                    Асамблея    
-                </a>
-                <a href="{{ route('mainarticle.arc.index') }}" class="assembly2 ">
-                    Асамблея
-                </a>
-                <a href="{{ route('mainarticle.school.index') }}" class="assembly3 ">
-                    Асамблея
-                </a>
-                <a href="#" class="assembly4">
-                    Асамблея
-                </a>
-                <a href="#" class="assembly5">
-                    Асамблея
-                </a>
-                <a href="#" class="assembly6">
-                    Асамблея
-                </a>
-                <a href="#" class="assembly7">
-                    Асамблея
-                </a>
-                <a href="#" class="assembly8">
-                    Асамблея
-                </a>
+                <div class="assembly-left ">
+                    <div class=" assembly-left-one">
+                        <a class="assembly-link-color" href="{{ route('mainarticle.assembly.index') }}"><span>Symbiosis with God</span> <br> Симбіоз з Богом</a>
+                    </div>
+                    <div class=" assembly-left-two">
+                        <a class="assembly-link-color" href="#"><span>Assembly</span> <br> Асамблея</a>
+                    </div>
+                    <div class=" assembly-left-three">
+                        <a class="assembly-link-color" href="#">Новини дня</a>
+                    </div>
+                    {{-- <div class="assembly-left-four">
+
+                    </div> --}}
+                </div>
+                <div class="assembly-right ">
+                    <div class=" assembly-right-one">
+                        <a class="assembly-link-color" href="{{ route('mainarticle.missionswerk.index') }}"> <img class="logo-missionswerk-main" src="../img/Logo_Missionswerk.png" alt="">
+                             <span>Missionswerk</span> <br> Промені радості</a>
+                    </div>
+                    <div class=" assembly-right-two">
+                        <a class="assembly-link-color" href="{{ route('mainarticle.arc.index') }}"><span>Hippos</span> <br> Центр реабілітації</a>
+                    </div>
+                    <div class=" assembly-right-three">
+                        <a class="assembly-link-color" href="#">Новини дня</a>
+                    </div>
+                    {{-- <div class="assembly-right-four">
+                        
+                    </div> --}}
+                </div>
             </div>
         </div>
         @include('layouts.footer')
