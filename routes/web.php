@@ -54,6 +54,11 @@ Route::get('/mainarticle/missionswerk', function () {
     return view('mainarticle.missionswerk.index');
 })->name('mainarticle.missionswerk.index');
 
+Route::get('/mainarticle/about_us', function () {
+    return view('mainarticle.about_us.index');
+})->name('mainarticle.about_us.index');
+
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });

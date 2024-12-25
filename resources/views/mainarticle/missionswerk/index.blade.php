@@ -12,7 +12,7 @@
         <div class="content article-fixel-text ">
             <div class="article-text-container ">
                 
-                <h2><img class="logo-missionswerk-main" src="../img/Logo_Missionswerk.png" alt="">
+                <h2><img class="logo-missionswerk-article" src="../img/Logo_Missionswerk.png" alt="">
                     Missionswerk
                 </h2>
                 <br>

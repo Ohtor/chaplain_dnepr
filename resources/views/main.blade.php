@@ -79,30 +79,36 @@
             </div>
             <div class="assembly ">
                 <div class="assembly-left ">
-                    <div class=" assembly-left-one">
-                        <a class="assembly-link-color" href="{{ route('mainarticle.assembly.index') }}"><span>Symbiosis with God</span> <br> Симбіоз з Богом</a>
+                    <div class=" assembly-left-one">                        
+                        <a class="assembly-link-color" href="{{ route('mainarticle.missionswerk.index') }}"> 
+                            <img class="logo-missionswerk-main" src="../img/Logo_Missionswerk2.png" alt="">
+                        {{-- <span>Missionswerk</span>  --}}
+                        <br> Промені радості</a>
                     </div>
                     <div class=" assembly-left-two">
-                        <a class="assembly-link-color" href="#"><span>Assembly</span> <br> Асамблея</a>
+                        <a class="assembly-link-color" href="#">
+                            <img class="logo-assembly-main" src="../img/Logo_assembly.png" alt=""> <br> Асамблея</a>
                     </div>
-                    <div class=" assembly-left-three">
+                    {{-- <div class=" assembly-left-three">
                         <a class="assembly-link-color" href="#">Новини дня</a>
-                    </div>
+                    </div> --}}
                     {{-- <div class="assembly-left-four">
 
                     </div> --}}
                 </div>
                 <div class="assembly-right ">
                     <div class=" assembly-right-one">
-                        <a class="assembly-link-color" href="{{ route('mainarticle.missionswerk.index') }}"> <img class="logo-missionswerk-main" src="../img/Logo_Missionswerk.png" alt="">
-                             <span>Missionswerk</span> <br> Промені радості</a>
+                        <a class="assembly-link-color" href="{{ route('mainarticle.assembly.index') }}">
+                            <img class="logo-symbiosis-main" src="../img/Logo_symbiosis.png" alt=""> 
+                            <br> Симбіоз з Богом</a>
                     </div>
                     <div class=" assembly-right-two">
-                        <a class="assembly-link-color" href="{{ route('mainarticle.arc.index') }}"><span>Hippos</span> <br> Центр реабілітації</a>
+                        <a class="assembly-link-color" href="{{ route('mainarticle.arc.index') }}">
+                            <img class="logo-hippos-main" src="../img/Logo_hippos.png" alt=""><br> Центр реабілітації</a>
                     </div>
-                    <div class=" assembly-right-three">
+                    {{-- <div class=" assembly-right-three">
                         <a class="assembly-link-color" href="#">Новини дня</a>
-                    </div>
+                    </div> --}}
                     {{-- <div class="assembly-right-four">
                         
                     </div> --}}
