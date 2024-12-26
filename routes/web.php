@@ -58,6 +58,14 @@ Route::get('/mainarticle/about_us', function () {
     return view('mainarticle.about_us.index');
 })->name('mainarticle.about_us.index');
 
+Route::get('/mainarticle/symbiosis', function () {
+    return view('mainarticle.symbiosis.index');
+})->name('mainarticle.symbiosis.index');
+
+Route::get('/mainarticle/interaction_with_authorities', function () {
+    return view('mainarticle.interaction_with_authorities.index');
+})->name('mainarticle.interaction_with_authorities.index');
+
 
 // Route::get('/', function () {
 //     return view('welcome');

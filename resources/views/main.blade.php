@@ -86,7 +86,7 @@
                         <br> Промені радості</a>
                     </div>
                     <div class=" assembly-left-two">
-                        <a class="assembly-link-color" href="#">
+                        <a class="assembly-link-color" href="{{ route('mainarticle.assembly.index') }}">
                             <img class="logo-assembly-main" src="../img/Logo_assembly.png" alt=""> <br> Асамблея</a>
                     </div>
                     {{-- <div class=" assembly-left-three">
@@ -98,7 +98,7 @@
                 </div>
                 <div class="assembly-right ">
                     <div class=" assembly-right-one">
-                        <a class="assembly-link-color" href="{{ route('mainarticle.assembly.index') }}">
+                        <a class="assembly-link-color" href="{{ route('mainarticle.symbiosis.index') }}">
                             <img class="logo-symbiosis-main" src="../img/Logo_symbiosis.png" alt=""> 
                             <br> Симбіоз з Богом</a>
                     </div>

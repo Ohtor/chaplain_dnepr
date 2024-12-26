@@ -543,21 +543,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .assembly-right-one {
     position: relative;
-    justify-self: right;
+    /* justify-self: right; */
+    margin-left: auto;
     top: 7%;  
     
     width: 40%;
 }
 .assembly-right-two {
     position: relative;
-    justify-self: right;
+    /* justify-self: right; */
+    margin-left: auto;
     top: 10%; 
     right: 10%;
     width: 40%;
 }
 .assembly-right-three {
     position: relative;
-    justify-self: right;
+    /* justify-self: right; */
+    margin-left: auto;
     top: 15%; 
     right: 40%;
     width: 40%;
@@ -763,7 +766,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-family: 'FixelText-SemiBold';
     color: #121212;
     display: inline-block;
-    justify-self: center;
+    /* justify-self: center; */
+    margin: 0 auto;
     font-size: 16px;
     font-weight: 600;
     padding: 15px 0px;
@@ -790,7 +794,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     filter: drop-shadow(7px 7px 7px rgba(0,0,0, 0.9));
 }
 .headermainshield{
-    justify-self: center;
+    /* justify-self: center; */
+    margin: 0 auto;
     display: block;
     width: 114px;
     padding-top: 16px;
@@ -804,7 +809,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .rehabilitationbutton{
     display: block;
     width: 279px;
-    justify-self: center;
+    /* justify-self: center; */
+    margin: 0 auto;
     padding-top: 11px;
 }
 .rehabilitationbutton:hover{
@@ -930,7 +936,7 @@ pravrki{
     background-attachment: local; */
     background: #DECDA9;
     width: 1903px;
-    min-height: 1000px;
+    min-height: 500px;
 }
 
 /* .article-description-text{
@@ -1034,5 +1040,17 @@ font-family: 'FixelText-Regular';
 .article-about-content-img{
     width: 490px;
     margin: 0px 20px;
+}
+.article-video{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.article-description-size-60{
+    font-family: 'FixelText-Bold';
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
 }
 
